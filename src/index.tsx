@@ -1,3 +1,4 @@
+import { h } from "preact";
 import { Provider } from 'preact-redux';
 import store from './store';
 import App from './components/app';

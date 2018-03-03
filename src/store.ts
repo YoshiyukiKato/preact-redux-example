@@ -1,7 +1,11 @@
 import { createStore } from 'redux';
 
-let ACTIONS = {
-	ADD_TODO: ({ todos, ...state }, { text }) => ({
+declare global{
+	var devToolsExtension:any;
+}
+
+let ACTIONS:any = {
+	ADD_TODO: ({ todos, ...state }:any, { text }:any) => ({
 		todos: [...todos, {
 			id: Math.random().toString(36).substring(2),
 			text
@@ -9,8 +13,8 @@ let ACTIONS = {
 		...state
 	}),
 
-	REMOVE_TODO: ({ todos, ...state }, { todo }) => ({
-		todos: todos.filter( i => i!==todo ),
+	REMOVE_TODO: ({ todos, ...state }:any, { todo }:any) => ({
+		todos: todos.filter( (i:any) => i!==todo ),
 		...state
 	})
 };
