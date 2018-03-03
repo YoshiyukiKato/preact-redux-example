@@ -1,3 +1,23 @@
+# Typescript version of [Preact Redux Example](https://github.com/developit/preact-redux-example)
+## Note
+- **This cannot be build as it is, because type definition of preact-redux released in npm is not up-to-date. You have to manually modify it in your local environment after `npm install`.** (3/3/2018)
+
+### Before
+```ts
+//node_modules/preact-redux/src/preact-redux.d.ts
+export class Provider extends Component<ProviderProps, {}> {
+  render(props: ProviderProps): VNode
+}
+```
+
+### After
+```ts
+//node_modules/preact-redux/src/preact-redux.d.ts
+export class Provider extends Component<ProviderProps, {}> {
+  render(props?: ProviderProps): VNode
+}
+```
+
 # Preact Redux Example
 
 A **9kb** Preact + Redux boilerplate built with [Preact CLI], implementing a To-Do List app.
