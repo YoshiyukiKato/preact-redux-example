@@ -1,6 +1,6 @@
 # Typescript version of [Preact Redux Example](https://github.com/developit/preact-redux-example)
 ## Note
-- **This cannot be build as it is, because type definition of preact-redux released in npm is not up-to-date. You have to manually modify it in your local environment after `npm install`.** (3/3/2018)
+> **This cannot be built as it is, because type definition of preact-redux released in npm is not up-to-date. You have to manually modify it in your local environment after `npm install`.** (3/3/2018)
 
 ### Before
 ```ts
